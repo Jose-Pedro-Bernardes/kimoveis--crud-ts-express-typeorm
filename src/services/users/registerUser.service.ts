@@ -13,7 +13,6 @@ const createUserService = async (
   await userRepository.save(user);
 
   const userResponse: TUserResponse = userResSchema.parse(user);
-
   return userResponse;
 };
 
