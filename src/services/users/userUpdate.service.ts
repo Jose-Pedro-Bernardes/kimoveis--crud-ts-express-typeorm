@@ -20,7 +20,6 @@ const updateUserService = async (
   });
 
   await userRepository.save(newUserData);
-
   const userResponse: TUserResponse = userResSchema.parse(newUserData);
 
   return userResponse;
