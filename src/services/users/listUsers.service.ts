@@ -19,7 +19,6 @@ const listUsersService = async (
   }
 
   const users: User[] | undefined = await userRepository.find();
-
   const usersResponse: TUsersResponse = listUsersResSchema.parse(users);
 
   return usersResponse;
